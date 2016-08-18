@@ -7,3 +7,11 @@
 2. Nagios must be installed on the machine running a web server (i.e. apache)
 sudo apt-get install nagios3
 NOTE: it ask's password for nagiosadmin user (give a stronge password)
+
+3. Nagios drops configuration files into /etc/nagios3/conf.d/ as part of the base installation, (use those bases and template files for configuration Nagios)
+
+4. create a file named "cluster-nagios.cfg" under configuration folder "/etc/nagios3/conf.d/"
+cd /etc/nagios3/conf.d/
+nano cluster-nagios.cfg
+
+5. Next, try to start up (or restart) nagios 
