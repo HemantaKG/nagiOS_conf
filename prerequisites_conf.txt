@@ -15,3 +15,6 @@ cd /etc/nagios3/conf.d/
 nano cluster-nagios.cfg
 
 5. Next, try to start up (or restart) nagios 
+
+6. change nagios3 passwd
+sudo htpasswd -c /etc/nagios2/htpasswd.users nagiosadmin
