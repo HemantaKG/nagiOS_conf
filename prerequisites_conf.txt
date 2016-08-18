@@ -1,0 +1,9 @@
+1. Need a list of fully qualified names of all the hosts you want to monitor (/etc/hosts) as below 
+10.0.0.1    humpty      humpty.alice.icts.res.in
+10.0.0.2    dumpty      dumpty.alice.icts.res.in
+10.0.0.11	  node001     node001.alice.icts.res.in
+10.0.0.12	  node002     node002.alice.icts.res.in
+
+2. Nagios must be installed on the machine running a web server (i.e. apache)
+sudo apt-get install nagios3
+NOTE: it ask's password for nagiosadmin user (give a stronge password)
