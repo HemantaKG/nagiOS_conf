@@ -1,5 +1,4 @@
-Follow the steps to configure nagios3 cluster monitoring tool:
-
+Follow prerequisites for nagios configuration
 step 1. Need a list of fully qualified names of all the hosts you want to monitor (/etc/hosts) as below 
 10.0.0.1    master1   master1.alice.cluster.res
 10.0.0.2    master2   master2.alice.cluster.res
@@ -9,20 +8,3 @@ step 1. Need a list of fully qualified names of all the hosts you want to monito
 step 2. Nagios must be installed on the machine running a web server (i.e. apache)
 sudo apt-get install nagios3
 NOTE: it ask's password for nagiosadmin user (give a stronge password)
-
-step 3. Nagios drops configuration files into /etc/nagios3/conf.d/ as part of the base installation, (use those bases and template files for configuration Nagios)
-
-step 4. create a file named "cluster-nagios.cfg" under configuration folder "/etc/nagios3/conf.d/"
-NOTE: This file keeps entire cluster asscess or comunication related informations of each node of the cluster to communicate with the nodes for monitoring the states
-cd /etc/nagios3/conf.d/
-nano cluster-nagios.cfg
-
-step 5. Next, try to start up (or restart) nagios
-NOTE: the basic setup done
-
-Advance configuration to monitor LOAD, CPU, USERS, IPMI, ect...
-NOTE: look at the "/etc/nagios3/conf.d/localhost_nagios2.cfg" file
-
-Other:
-1. to change nagios3 passwd (that we set at step 2)
-sudo htpasswd -c /etc/nagios2/htpasswd.users nagiosadmin
