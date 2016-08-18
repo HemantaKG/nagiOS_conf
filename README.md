@@ -16,12 +16,12 @@ step 3. Next, try to start up (or restart) nagios
 
 NOTE: the basic setup done
 
-Advance configuration to monitor LOAD, CPU, USERS, IPMI, ect...
+
+For advance configuration to monitor LOAD, CPU, USERS, IPMI, ect...
 
 NOTE: look at the "/etc/nagios3/conf.d/localhost_nagios2.cfg" file
 
 Other:
-
 1. to change nagios3 passwd (that we set at step 2)
 
 sudo htpasswd -c /etc/nagios2/htpasswd.users nagiosadmin
