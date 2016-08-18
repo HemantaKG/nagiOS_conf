@@ -1,6 +1,7 @@
 # nagiOS3 configuration
 
 Follow below step to cofigure nagios3:
+
 step 1. Nagios drops configuration files into /etc/nagios3/conf.d/ as part of the base installation, (use those bases and template files for configuration Nagios)
 
 step 2. create a file named "cluster-nagios.cfg" under configuration folder "/etc/nagios3/conf.d/"
